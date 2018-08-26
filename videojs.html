@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- videojs -->
+    <link href="css/video-js.css" rel="stylesheet">
+    <script src="js/video.js"></script>
+    <script src="js/videojs-flash.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        setVideoSource("left", videojs("leftCameraVideo"));
+    });
+    // 設定video src位置
+    function setVideoSource(view, player) {
+        player.src("rtmp://" + location.host + "/live/" + view);	//直接取得當下的ip
+    }
+    </script>
+</head>
+
+<body>
+    <div>
+        <video id="leftCameraVideo" class="video-js vjs-playing vjs-has-started vjs-user-inactive" preload="auto" width="640" height="360" data-setup="{}" autoplay controls>
+        	<!-- src由JavaScript生成 -->
+            <source src="/live/left" type="rtmp/flv">
+        </video>
+    </div>
+</body>
