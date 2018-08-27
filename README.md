@@ -4,3 +4,4 @@
 3. [centered](https://github.com/SpicyBoyd/side_project/blob/master/centered.js)：使元件置中(隨視窗大小改變)
 4. [videojs](https://github.com/SpicyBoyd/side_project/blob/master/videojs.html)：rtmp video (flash video)
 5. [SoapUI](https://github.com/SpicyBoyd/side_project/blob/master/soapUI.js)：使用jQuery的plugin-soap，來進行SoapUI-web service的動作
+6. [checkSession](https://github.com/SpicyBoyd/side_project/blob/master/checkSession.js)：利用setTimeout()，來檢查session是否過期
